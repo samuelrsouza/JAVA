@@ -7,9 +7,9 @@ package javafile;
 
 /**
  *
- * @author CC44040337883
+ * @author samuelrsouza
  */
-public class JavaFile {
+public class vetplusmatriz {
 
     /**
      * @param args the command line arguments
@@ -19,10 +19,19 @@ public class JavaFile {
         int vet[]= new int[10];
         for (int i = 0; i<vet.length;i++){
             vet[i]=i+10;
-            System.out.print(vet[i]+ "|");
+            System.out.println(vet[i]);
         }
-        System.out.println();
         
+        
+   
+        int mat[][]=new int[4][4];
+        for(int i=0; i<mat.length; i++){
+           for(int j=0; j<mat[0].length;j++){
+            mat[i][j]=i*j;
+            System.out.print(mat[i][j]+"|");
+        }
+            System.out.println();
+        }
     }
     
 }
